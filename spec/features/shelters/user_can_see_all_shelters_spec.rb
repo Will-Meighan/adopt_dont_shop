@@ -2,8 +2,8 @@ require 'rails_helper'
 
 RSpec.describe "shelters index page", type: :feature do
   it "can see the name of each shelter in the system" do
-    shelter_1 = Shelter.new(name: "Dogs 'R' Us")
-    shelter_2 = Shelter.new(name: "Save a Paw")
+    shelter_1 = Shelter.create(name: "Dogs 'R' Us", address: "1905 NE Innsbruck Dr", city: "Ankeny", state: "IA", zip: "50021")
+    shelter_2 = Shelter.create(name: "Save a Paw", address: "1350 Irving St", city: "Denver", state: "CO", zip: "80024")
 
     visit '/shelters'
 
