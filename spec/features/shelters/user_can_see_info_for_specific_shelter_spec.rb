@@ -6,6 +6,7 @@ RSpec.describe "shelter show page", type: :feature do
     shelter_2 = Shelter.create(name: "Save a Paw", address: "1350 Irving St", city: "Denver", state: "CO", zip: "80024")
 
     visit "/shelters/#{shelter_1.id}"
+
     expect(page).to have_content(shelter_1.name)
     expect(page).to have_content(shelter_1.address)
     expect(page).to have_content(shelter_1.city)

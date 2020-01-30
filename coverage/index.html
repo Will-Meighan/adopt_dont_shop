@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-01-29T18:46:33-07:00">2020-01-29T18:46:33-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-01-29T19:02:04-07:00">2020-01-29T19:02:04-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -233,7 +233,7 @@
       <tr>
         <td class="strong"><a href="#c7807fb6218ffda308a6bbebf7c75348a56d8772" class="src_link" title="spec/features/shelters/user_can_see_info_for_specific_shelter_spec.rb">spec/features/shelters/user_can_see_info_for_specific_shelter_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>23</td>
+        <td>24</td>
         <td>17</td>
         <td>17</td>
         <td>0</td>
@@ -1734,91 +1734,97 @@
           <code class="ruby">    visit &quot;/shelters/#{shelter_1.id}&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="9">
           
-          <code class="ruby">    expect(page).to have_content(shelter_1.name)</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_content(shelter_1.address)</code>
+          <code class="ruby">    expect(page).to have_content(shelter_1.name)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_content(shelter_1.city)</code>
+          <code class="ruby">    expect(page).to have_content(shelter_1.address)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_content(shelter_1.state)</code>
+          <code class="ruby">    expect(page).to have_content(shelter_1.city)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
+          <code class="ruby">    expect(page).to have_content(shelter_1.state)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
           <code class="ruby">    expect(page).to have_content(shelter_1.zip)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="15">
+        <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
           <code class="ruby">    visit &quot;/shelters/#{shelter_2.id}&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
+        <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
           <code class="ruby">    expect(page).to have_content(shelter_2.name)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="18">
+        <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
           <code class="ruby">    expect(page).to have_content(shelter_2.address)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
+        <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
           <code class="ruby">    expect(page).to have_content(shelter_2.city)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="20">
+        <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
           <code class="ruby">    expect(page).to have_content(shelter_2.state)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="21">
+        <li class="covered" data-hits="1" data-linenumber="22">
           <span class="hits">1</span>
           
           <code class="ruby">    expect(page).to have_content(shelter_2.zip)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="never" data-hits="" data-linenumber="24">
           
           
           <code class="ruby">end</code>
