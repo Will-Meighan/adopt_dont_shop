@@ -20,6 +20,10 @@ class SheltersController < ApplicationController
     @shelter_id = params[:id]
   end
 
+  def pets
+    @shelter = Shelter.find(params[:shelter_id])
+  end
+
   def update
     shelter = Shelter.find(params[:id])
     shelter.update(shelter_params)
