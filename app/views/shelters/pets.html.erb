@@ -6,7 +6,11 @@
   <p>approximate_age: <%= pet.approximate_age %> </p>
   <p>Gender: <%= pet.sex %> </p>
   <p>Description: <%= pet.description %></p>
-  <p>Status: <%= pet.status %> </p><br>
+  <p>Status: <%= pet.status %> </p>
+  <p><%= link_to 'Edit', "/pets/#{pet.id}/edit" %></p>
+  <p><%= button_to 'Delete Pet', "/pets/#{pet.id}", method: :delete %></p>
+  ---------------------------------------
 <% end %>
 
-<%= link_to 'Create Pet', "/shelters/#{@shelter.id}/pets/new" %>
+<p><%= link_to 'Create Pet', "/shelters/#{@shelter.id}/pets/new" %><p>
+<p> <%= link_to 'Back to Shelter', "/shelters/#{@shelter.id}" %>
