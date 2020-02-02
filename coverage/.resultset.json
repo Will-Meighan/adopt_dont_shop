@@ -189,6 +189,7 @@
         1,
         1,
         1,
+        1,
         null
       ],
       "/Users/williammeighan/turing/2module/projects/adopt_dont_shop/app/helpers/application_helper.rb": [
@@ -363,6 +364,10 @@
         1,
         null,
         null,
+        1,
+        0,
+        null,
+        null,
         null
       ],
       "/Users/williammeighan/turing/2module/projects/adopt_dont_shop/app/controllers/application_controller.rb": [
@@ -417,6 +422,6 @@
         null
       ]
     },
-    "timestamp": 1580601427
+    "timestamp": 1580618232
   }
 }
