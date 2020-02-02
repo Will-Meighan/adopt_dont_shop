@@ -2,5 +2,8 @@
 <h1><%= @pet.name %></h1>
 <p><%= @pet.description %></p>
 <p><%= @pet.approximate_age %></p>
-<p><%= @pet.sex %></p> 
+<p><%= @pet.sex %></p>
 <p><%= @pet.status %></p>
+
+<%= link_to 'Edit Pet', "/pets/#{@pet.id}/edit" %> <br>
+<%= link_to 'Shelters', "/shelters" %>
