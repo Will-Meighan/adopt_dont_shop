@@ -3,8 +3,8 @@
 <p><%= @pet.description %></p>
 <p><%= @pet.approximate_age %></p>
 <p><%= @pet.sex %></p>
-<p><%= @pet.status %></p>
+<p><%= @pet.status %></p><br>
 
-<%= link_to 'Edit Pet', "/pets/#{@pet.id}/edit" %> <br>
+<%= link_to 'Update Pet', "/pets/#{@pet.id}/edit" %> <br>
 <%= button_to 'Delete Pet', "/pets/#{@pet.id}", method: :delete %>
 <%= link_to 'Shelters', "/shelters" %>

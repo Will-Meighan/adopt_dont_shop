@@ -22,7 +22,7 @@ describe 'As a visitor', type: :feature do
       # expect(page).to have_no_css("https://images-na.ssl-i  mages-amazon.com/images/I/61nMea1G-xL._AC_SX425_.jpg")
     end
 
-    it 'has a link to add a new pet' do
+    it 'there is a link to add a new pet' do
 
       shelter_1 = Shelter.create(name: "Dogs 'R' Us", address: "1905 NE Innsbruck Dr", city: "Ankeny", state: "IA", zip: "50021")
       shelter_2 = Shelter.create(name: "Save a Paw", address: "1350 Irving St", city: "Denver", state: "CO", zip: "80024")
@@ -32,7 +32,7 @@ describe 'As a visitor', type: :feature do
 
       visit "/shelters/#{shelter_1.id}/pets"
 
-      click_on('Add Pet')
+      click_on('Create Pet')
 
       expect(current_path).to eq("/shelters/#{shelter_1.id}/pets/new")
       expect(page).to have_content('Image url')
