@@ -1,4 +1,4 @@
-<h1>All Pets at <%= @shelter.name %> </h1><br>
+<h1>Pets available at <%= @shelter.name %>; <%= @shelter.pets.count %>  </h1><br>
 
 <% @shelter.pets.each do |pet| %>
   <img src= <%= pet.image %>><br>
