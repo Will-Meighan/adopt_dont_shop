@@ -13,7 +13,8 @@ describe 'As a visitor' do
       expect(page).to have_content(pet_1.name)
       expect(page).to have_content(pet_1.approximate_age)
       expect(page).to have_content(pet_1.sex)
-      expect(page).to have_content(pet_1.shelter.name)
+      expect(page).to have_content(pet_1.description)
+      expect(page).to have_content(pet_1.status)
       expect(page).to have_css("img[src*='https://d17fnq9dkz9hgj.cloudfront.net/breed-uploads/2018/08/chihuahua-card-small.jpg?bust=1535568982']")
     end
   end

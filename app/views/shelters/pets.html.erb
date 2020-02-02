@@ -3,7 +3,7 @@
 <% @shelter.pets.each do |pet| %>
   <img src= <%= pet.image %>><br>
   <h2>Name: <%= link_to pet.name, "/pets/#{pet.id}" %> </h2>
-  <p>approximate_age: <%= pet.approximate_age %> </p>
+  <p>Approximate age: <%= pet.approximate_age %> </p>
   <p>Gender: <%= pet.sex %> </p>
   <p>Description: <%= pet.description %></p>
   <p>Status: <%= pet.status %> </p>
