@@ -1,12 +1,16 @@
-<h1>All Pets at <%= @shelter.name %> </h1>
+<h1>All Pets at <%= @shelter.name %> </h1><br>
 
 <% @shelter.pets.each do |pet| %>
   <img src= <%= pet.image %>><br>
-  <p>Name: <%= link_to pet.name, "/pets/#{pet.id}" %> </p>
-  <p>Age: <%= pet.approximate_age %> </p>
+  <h2>Name: <%= link_to pet.name, "/pets/#{pet.id}" %> </h2>
+  <p>Approximate age: <%= pet.approximate_age %> </p>
   <p>Gender: <%= pet.sex %> </p>
   <p>Description: <%= pet.description %></p>
   <p>Status: <%= pet.status %> </p>
+  <p><%= link_to 'Edit', "/pets/#{pet.id}/edit" %></p>
+  <p><%= button_to 'Delete Pet', "/pets/#{pet.id}", method: :delete %></p>
+  ---------------------------------------
 <% end %>
 
-<%= link_to 'Add Pet', "/shelters/#{@shelter.id}/pets/new" %>
+<p><%= link_to 'Create Pet', "/shelters/#{@shelter.id}/pets/new" %><p>
+<p> <%= link_to 'Back to Shelter', "/shelters/#{@shelter.id}" %>

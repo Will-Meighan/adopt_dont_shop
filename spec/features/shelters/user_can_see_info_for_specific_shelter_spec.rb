@@ -12,6 +12,10 @@ describe "As a visitor", type: :feature do
       expect(page).to have_content(shelter_1.city)
       expect(page).to have_content(shelter_1.state)
       expect(page).to have_content(shelter_1.zip)
+      expect(page).to have_content('View Pets at this shelter')
+      expect(page).to have_content('Update Shelter')
+      expect(page).to have_button('Delete Shelter')
     end
   end
+
 end

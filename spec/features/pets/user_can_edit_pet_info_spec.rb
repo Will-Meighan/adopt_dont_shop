@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'as a visitor', type: :feature do
-  describe 'when I am on the pet show page' do
+  describe 'when I am on the pet page' do
     before(:each) do
       @shelter_1 = Shelter.create(name: "Dogs 'R' Us", address: "1905 NE Innsbruck Dr", city: "Ankeny", state: "IA", zip: "50021")
       @shelter_2 = Shelter.create(name: "Save a Paw", address: "1350 Irving St", city: "Denver", state: "CO", zip: "80024")
@@ -10,11 +10,11 @@ describe 'as a visitor', type: :feature do
       @pet_2 = @shelter_2.pets.create(image: "https://images-na.ssl-images-amazon.com/images/I/61nMea1G-xL._AC_SX425_.jpg", name: 'Tiny', approximate_age: 3, sex: 'Male', description: 'A big teddy bear', status: 'Adopted')
     end
 
-    it 'can update the pet info' do
+    it 'I can update the pet info' do
 
       visit "/pets/#{@pet_1.id}"
 
-      click_on ('Edit Pet')
+      click_on ('Update Pet')
 
       expect(current_path).to eq("/pets/#{@pet_1.id}/edit")
 
